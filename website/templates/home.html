@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}GitHub Repository Tracker{% endblock %}
+
+{% block content %}
+<h1>GitHub Repository Tracker</h1>
+
+<form method="POST" action="/result">
+    <label for="repo">Enter GitHub repository (owner/repo):</label>
+    <input type="text" id="repo" name="repo" placeholder="pallets/flask" required>
+    <button type="submit">Search</button>
+</form>
+{% endblock %}
